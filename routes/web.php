@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 /*
@@ -18,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::resource('products', ProductController::class);
+Route::resource('homepage', HomePageController::class);
